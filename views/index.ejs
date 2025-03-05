@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register Now</h2>
+        <p>Fill in your details below:</p>
+        
+        <form id="userForm" action="/submit" method="POST">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="errorMessage"><%= errorMessage %></p>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
